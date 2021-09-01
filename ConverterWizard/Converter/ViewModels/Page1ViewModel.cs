@@ -28,18 +28,12 @@ namespace ConverterWizard.Converter.ViewModels
         {
             IDataObject ido = inObject as IDataObject;
             if (null == ido) return;
-
-            // Get all the possible format
-            string[] formats = ido.GetFormats();
-
+            
+            // Check to see if we have any files dropped
             if (ido.GetData(DataFormats.FileDrop) is string[] files)
             {
                 FileToConvert = files[0];
             }
-
-            // Do what you need here based on the format passed in.
-            // You will probably have a few options and you need to
-            // decide an order of preference.
         }
 
         private string _fileToConvert;

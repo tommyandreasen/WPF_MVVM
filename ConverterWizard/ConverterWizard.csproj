@@ -84,6 +84,7 @@
       <DependentUpon>ConverterWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Converter\Helpers\BaseCommand.cs" />
+    <Compile Include="Converter\Helpers\DropBehavoir.cs" />
     <Compile Include="Converter\Helpers\ObservableObject.cs" />
     <Compile Include="Converter\Helpers\RelayCommand.cs" />
     <Compile Include="Converter\ViewModels\ConverterViewModel.cs" />

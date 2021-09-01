@@ -8,8 +8,8 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"
              AllowDrop="True"
-             helpers:DropBehavior.PreviewDropCommand="{Binding PreviewDropCommand}">
-    <Grid>
+             >
+    <Grid helpers:DropBehavior.PreviewDropCommand="{Binding PreviewDropCommand}">
         <StackPanel>
             <TextBlock Text="Select file"/>
             <Button Content="Select file" Command="{Binding Path=SelectFileCommand}"/>
